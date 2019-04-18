@@ -11,7 +11,7 @@ public class test01 {
 		LoginDao logindao = new LoginDao();
 		try {
 			Connection conn = logindao.connect();
-			if (logindao.Checker(conn, "admin", "1password")) {
+			if (logindao.Checker(conn, "admin", "password")) {
 				System.out.println("SUCCESS");
 			} else {
 				System.out.println("FAIL");
